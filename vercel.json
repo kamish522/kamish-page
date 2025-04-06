@@ -1,9 +1,6 @@
 {
     "version": 2,
-    "routes": [
-      {"src": "/(.*)", "dest": "/index.html"},
-      {"src": "/favicon.ico", "dest": "/favicon.ico"},
-      {"src": "/assets/(.)", "dest": "/assets/$1"},
-      {"src": "/(.)\\.js", "dest": "/$1.js"}
-    ]
+    "rewrites": [
+        {"source": "/(.*)", "destination": "/index.html"}
+      ]
   }
