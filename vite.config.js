@@ -8,6 +8,7 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     assetsInline: false,
+    assetsDir: 'assets',
   },
   plugins: [
     react(),
