@@ -25,21 +25,21 @@ function Game() {
 
               {
                 main.map((el) => (
-                  <div className="flex flex-col lg:flex-row items-center justify-center container mx-auto pt-6 pb-4 info" key={el.title}>
+                  <div className="flex flex-col lg:flex-row container mx-auto pt-6 pb-4 info" key={el.title}>
                     <div className="flex-1">
                       <h1 className="text-3xl md:text-4xl font-bold mb-4 max-w-2xl">{el.title}</h1>
                       <p className="text-lg md:text-xl text-gray-400 mb-4 max-w-2xl">{el.description}</p>
                     </div>
 
                     {
-                      el.image && (
-                        <div className="flex-1 relative scale-95">
-                          <div className="relative z-10 w-full h-full">
-                            <img src={el.image} alt={el.title} className="absolute inset-0 m-auto object-contain rounded-md" />
-                          </div>
-                        </div>
-                      )
-                    }
+  el.image && (
+    <div className="flex-1 relative scale-95 lg:block hidden">
+      <div className="relative z-10 w-full h-full">
+        <img src={el.image} alt={el.title} className="absolute inset-0 m-auto object-contain rounded-md" />
+      </div>
+    </div>
+  )
+}
                   </div>
                 ))              
               }
