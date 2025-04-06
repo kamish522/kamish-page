@@ -32,14 +32,14 @@ function Game() {
                     </div>
 
                     {
-  el.image && (
-    <div className="flex-1 relative scale-95 lg:block hidden">
-      <div className="relative z-10 w-full h-full">
-        <img src={el.image} alt={el.title} className="absolute inset-0 m-auto object-contain rounded-md" />
-      </div>
-    </div>
-  )
-}
+                      el.image && (
+                        <div className="flex-1 relative scale-95 lg:block hidden">
+                          <div className="relative z-10 w-full h-full">
+                            <img src={el.image} alt={el.title} className="absolute inset-0 m-auto object-contain rounded-md" />
+                          </div>
+                        </div>
+                      )
+                    }
                   </div>
                 ))              
               }
