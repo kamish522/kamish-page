@@ -13,18 +13,6 @@ function Footer() {
           }
         ]
       },{
-        'name': "ПОЛЕЗНЫЕ ССЫЛКИ",
-        'link': [
-          {
-            'name': "Пригласить бота",
-            'link': "https://discord.com/oauth2/authorize?client_id=1066975258206294096"
-          },
-          {
-            'name': "Сервер поддержки",
-            'link': "https://discord.gg/8p8NYhparv"
-          }
-        ]
-      },{
         'name': "МОНТОРИНГИ",
         'link': [
           {
@@ -34,6 +22,18 @@ function Footer() {
           {
             'name': "Мы на BotiCord",
             'link': "https://boticord.top/bot/1066975258206294096"
+          }
+        ]
+      },{
+        'name': "ДРУЗЬЯ",
+        'link': [
+          {
+            'name': "Anima bot",
+            'link': "https://discord.com/oauth2/authorize?client_id=1187466797885182141"
+          },
+          {
+            'name': "Yumiko bot",
+            'link': "https://discord.com/oauth2/authorize?client_id=1246492634139070517"
           }
         ]
       }
@@ -72,7 +72,7 @@ function Footer() {
           </div>
           
           <hr className="my-6 sm:mx-auto border-neutral-700 lg:my-8"/>
-          <p className="block text-sm sm:text-center text-gray-400 mb-4">Мы не являемся аффилированным лицом компании Discord Inc.</p>
+          <p className="block text-sm sm:text-center text-gray-400">Мы не являемся аффилированным лицом компании Discord Inc.</p>
         </div>
       </footer>
     )
