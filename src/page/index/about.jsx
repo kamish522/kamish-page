@@ -10,7 +10,6 @@ function About() {
           <div className="flex-1 text-center lg:text-left translate-y-4">
             
             <h1 className="text-4xl md:text-4xl font-bold mb-6">{title}</h1>
-            
             <p className="text-lg md:text-xl text-gray-400 mb-8 max-w-2xl">{description}</p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
