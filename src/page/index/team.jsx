@@ -10,7 +10,7 @@ function Info() {
             name: "Vertexx",
             image: "own/vertexx.jpg",
             description: "Дизайн и хорошая подруга",
-            tag: ["designer"]
+            tag: ["designer", "tester"]
         }
     ]
 
@@ -24,7 +24,7 @@ function Info() {
                         <div class="flex justify-center">
                             <ul class="flex flex-wrap justify-center">
                                 <li><a href={person.url} target="_blank" class="info gap-4">
-                                    <img class="rounded-full h-25 w-25 border-4 border-[#2a2a2a]" src={person.image}/>
+                                    <img class="rounded-full h-30 w-30 border-4 border-[#2a2a2a]" src={person.image}/>
 
                                     <div class="flex flex-col gap-3">
                                         <h4 class="font-bold text-xl">@{person.name}</h4>
