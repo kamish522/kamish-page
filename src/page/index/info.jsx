@@ -20,14 +20,14 @@ function Game() {
       <main>
           <div className="flex flex-col items-center justify-center container mx-auto info">
             <div className="flex flex-col lg:flex-row gap-12">
-                <h1 className="text-4xl md:text-5xl font-bold text-center w-full pb-4">Возможности</h1>
+                <h1 className="text-4xl md:text-5xl font-bold text-center w-full pb-10">Возможности</h1>
             </div>
 
               {
                 main.map((el) => (
-                  <div className="flex flex-col lg:flex-row container mx-auto pt-6 pb-4 info" key={el.title}>
+                  <div className="flex flex-col lg:flex-row container mx-auto pt-6 pb-4 info">
                     <div className="flex-1">
-                      <h1 className="text-3xl md:text-4xl font-bold mb-4 max-w-2xl">{el.title}</h1>
+                      <h1 className="text-2xl md:text-4xl font-bold mb-4 max-w-2xl">{el.title}</h1>
                       <p className="text-lg md:text-xl text-gray-400 mb-4 max-w-2xl">{el.description}</p>
                     </div>
 

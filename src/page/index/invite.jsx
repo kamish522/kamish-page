@@ -6,7 +6,7 @@ function Invite() {
       <main>
         <div className="flex flex-col items-center justify-center container mx-auto pt-23 pb-16 info">
           <div className="flex flex-col lg:flex-row gap-12">
-              <h1 className="text-4xl md:text-5xl font-bold text-center w-full">Готовы пригласить меня?</h1>
+              <h1 className="text-3xl md:text-5xl font-bold text-center w-full">Готовы пригласить меня?</h1>
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mt-6">
