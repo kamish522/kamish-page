@@ -19,10 +19,9 @@ const router = [
 ];
 
 const App = () => {
-
     return (
         <BrowserRouter>
-            <Header/>
+        <Header/>
             <Routes>
                 {
                     router.map((el) => ( <Route path={el.path} element={el.element}/> ))
@@ -30,7 +29,7 @@ const App = () => {
 
                 <Route path="*" element={<PageNotFound />} />
             </Routes>
-            <Footer/>
+        <Footer/>
         </BrowserRouter>
     )
 }
