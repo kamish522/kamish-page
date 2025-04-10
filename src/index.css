@@ -28,8 +28,24 @@ footer {
     display: flex;
     border-radius: 15px;
     border: 1px solid #2a2a2a;
-    padding: 40px;
+    padding: 20px;
     margin-bottom: 30px;
     position: relative;
     overflow: hidden;
+}
+
+.tag {
+    background: #191919;
+    display: flex;
+    border-radius: 7px;
+    border: 1px solid #2a2a2a;
+    padding: 9px;
+    position: relative;
+    overflow: hidden;
+}
+
+@media (min-width: 1024px) {
+    .info {
+        padding: 40px;
+    }
 }
