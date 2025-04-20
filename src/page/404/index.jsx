@@ -1,19 +1,19 @@
 const PageNotFound = () => {
   const json = [
     {
-      text: "Что вы тут забыли?"
+      text: "Хей! Как ты тут оказался?"
     },{
-      text: "Кажется такой страницы не существует!"
+      text: "Такой страницы не существует."
     },{
-      text: "Вы кто путник?"
+      text: "Вау, вы нашли пасхалку! А теперь кыш :)"
     },{
-      text: "Вы где эту ссылку откопали?"
+      text: "К сожалению, я не смог найти страницу!"
     },{
-      text: "Советую валить отсюда!"
+      text: "Советую зайти на наш Discord-сервер!"
     },{
-      text: "Кыш!"
+      text: "Советую посетить главную страницу!"
     },{
-      text: "Здравствуй, путник! Я не знаю что вы тут забыли, но я бы советовал валить отсюда!"
+      text: "Советую вернуться назад!"
     }
   ]
   
@@ -22,8 +22,8 @@ const PageNotFound = () => {
   
   return (
     <main>
-      <div className="container mx-auto pt-22 pb-16">
-        <div className="flex-1 text-center translate-y-4">
+      <div className="container mx-auto pt-30 pb-25">
+        <div className="flex-1 text-center translate-y-3">
             
           <h1 className="text-[100px] font-bold">404</h1>
           <p className="text-xl text-gray-400">{text}</p>
