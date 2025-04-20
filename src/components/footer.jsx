@@ -46,7 +46,6 @@ function Footer() {
 
             <div className="mb-6 md:mb-0">
               <a className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse" href="/">
-                <img className="h-8" alt="Kamish Logo" src="/Kamish-avatar.png"/>
                 <span className="self-center text-2xl font-semibold text-gray-300 whitespace-nowrap">Kamish</span>
               </a>
             </div>
@@ -60,7 +59,7 @@ function Footer() {
                     <ul className="text-gray-500 font-medium">
                       {
                         el.link.map((els) => (
-                          <li className="mb-2"><a className="hover:underline" href={els.link}>{els.name}</a></li>
+                          <li className="mb-2"><a className="hover:underline" target='_blank' href={els.link}>{els.name}</a></li>
                         ))
                       }
                     </ul>
