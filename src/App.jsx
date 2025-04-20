@@ -19,17 +19,24 @@ const router = [
 ];
 
 const App = () => {
+    const handleContextMenu = (event) => {
+        event.preventDefault();
+    };
+
+    
     return (
         <BrowserRouter>
-        <Header/>
-            <Routes>
-                {
-                    router.map((el) => ( <Route path={el.path} element={el.element}/> ))
-                }
+        <div onContextMenu={handleContextMenu}>
+            <Header/>
+                <Routes>
+                    {
+                        router.map((el) => ( <Route path={el.path} element={el.element}/> ))
+                    }
 
-                <Route path="*" element={<PageNotFound />} />
-            </Routes>
-        <Footer/>
+                    <Route path="*" element={<PageNotFound />} />
+                </Routes>
+            <Footer/>
+        </div>
         </BrowserRouter>
     )
 }
