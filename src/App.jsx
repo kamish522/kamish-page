@@ -19,14 +19,8 @@ const router = [
 ];
 
 const App = () => {
-    const handleContextMenu = (event) => {
-        event.preventDefault();
-    };
-
-    
     return (
         <BrowserRouter>
-        <div onContextMenu={handleContextMenu}>
             <Header/>
                 <Routes>
                     {
@@ -36,7 +30,6 @@ const App = () => {
                     <Route path="*" element={<PageNotFound />} />
                 </Routes>
             <Footer/>
-        </div>
         </BrowserRouter>
     )
 }
