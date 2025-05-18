@@ -1,19 +1,25 @@
+import { useEffect } from 'react';
+
+import button from '../components/button.jsx';
+
 const PageNotFound = () => {
+  useEffect(() => {
+    document.title = 'Страница не найдена | Kamish';
+  }, []);
+
   const json = [
     {
-      text: "Хей! Как ты тут оказался?"
+      text: "Данная страница не существует!"
     },{
-      text: "Такой страницы не существует."
+      text: "Kamish сказал: 'Я люблю с вами играть!'"
     },{
       text: "Вау, вы нашли пасхалку! А теперь кыш :)"
     },{
-      text: "К сожалению, я не смог найти страницу!"
+      text: "К сожалению, эта страница не существует!"
     },{
       text: "Советую зайти на наш Discord-сервер!"
     },{
-      text: "Советую посетить главную страницу!"
-    },{
-      text: "Советую вернуться назад!"
+      text: "Думаю, лучшее решение — вернуться назад!"
     }
   ]
   
@@ -31,7 +37,9 @@ const PageNotFound = () => {
         </div>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center mt-10">
-          <a href="/" className="hover:border hover:border-[#2a2a2a] hover:bg-[#111111] bg-[#2a2a2a] px-6 py-3 rounded-md text-[20px] font-medium">Вернуться на главную страницу</a>
+          {
+            new button().setName('Перейти на главную страницу').setStyle('1').setUrl('/').render()
+          }
         </div>
       </div>
     </main>
