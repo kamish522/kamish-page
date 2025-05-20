@@ -3,8 +3,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Header from "./components/header.jsx";
 import Footer from "./components/footer.jsx";
 
-import Home from "./page/index/index.jsx";
-import PageNotFound from "./page/404/index.jsx";
+import Home from "./page/index.jsx";
+import PageNotFound from "./page/404.jsx";
 
 // Важно: Добавить страницу при создании новой!!!
 
@@ -19,14 +19,8 @@ const router = [
 ];
 
 const App = () => {
-    const handleContextMenu = (event) => {
-        event.preventDefault();
-    };
-
-    
     return (
         <BrowserRouter>
-        <div onContextMenu={handleContextMenu}>
             <Header/>
                 <Routes>
                     {
@@ -36,7 +30,6 @@ const App = () => {
                     <Route path="*" element={<PageNotFound />} />
                 </Routes>
             <Footer/>
-        </div>
         </BrowserRouter>
     )
 }

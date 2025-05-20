@@ -1,16 +1,19 @@
 {
-  "name": "kamish",
+  "name": "kamish-site",
   "private": true,
-  "version": "2.0.0",
+  "version": "1.1.0",
   "type": "module",
   "scripts": {
-    "dev": "vite --host",
+    "dev": "vite --host --port 8081",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
+    "@skyra/discord-components-react": "^3.6.1",
     "@tailwindcss/vite": "^4.1.1",
+    "install": "^0.13.0",
+    "npm": "^11.4.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-router-dom": "^7.5.0"

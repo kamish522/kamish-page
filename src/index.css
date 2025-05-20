@@ -7,8 +7,6 @@ body {
 }
 
 header {
-    background: #191919;
-    border-bottom: 1px solid #2a2a2a;
     position: fixed;
     left: 0;
     right: 0;
@@ -16,11 +14,74 @@ header {
     z-index: 50;
 }
 
+#scrolled\ enable {
+    border-bottom: 1px solid #2a2a2a;
+    background: #191919;
+    transition: background 0.3s;
+}
+
 footer {
     background: #191919;
-    border: 1px solid #2a2a2a;
+    border-top: 1px solid #2a2a2a;
     left: 0;
     right: 0;
+}
+
+/* Заготовки для блоков */
+
+block,
+#block,
+.block {
+    max-width: 1500px;
+    padding: 20px;
+        
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 15px;
+    border: 1px solid #2a2a2a;
+
+    background: #191919;
+    position: relative;
+    overflow: hidden;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+    block,
+    #block,
+    .block {
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+text {
+    font-weight: bold;
+    font-size: 2.25rem;
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    text {
+        font-size: 3rem;
+    }
+}
+
+/* Второстепенное */
+
+tag {
+    background: #191919;
+    display: flex;
+    border-radius: 7px;
+    border: 1px solid #2a2a2a;
+    padding: 9px;
+    position: relative;
+    overflow: hidden;
 }
 
 .info {
@@ -34,40 +95,16 @@ footer {
     overflow: hidden;
 }
 
-.menu {
+#menu {
     background: #191919;
-    border-radius: 15px;
-    border: 1px solid #2a2a2a;
-    position: fixed;
-    z-index: 100;
-    left: 50%;
-    top: 240px;
-    transform: translate(-50%, -50%);
-}
-
-@media (min-width: 1024px) {
-    .menu {
-        position: fixed;
-        right: 20px;
-        left: auto;
-        top: 80px;
-        transform: none;
-    }
-}
-
-
-.tag {
-    background: #191919;
-    display: flex;
-    border-radius: 7px;
-    border: 1px solid #2a2a2a;
-    padding: 9px;
-    position: relative;
-    overflow: hidden;
 }
 
 @media (min-width: 1024px) {
     .info {
         padding: 40px;
     }
+}
+
+#Text\ link {
+    text-decoration: underline
 }
