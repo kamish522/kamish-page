@@ -12,9 +12,9 @@ function About() {
 
     return (
         <main>
-            <div className="container pt-22 pb-16 md:px-5 mx-auto">
+            <div className="container pt-22 pb-16 px-3 md:px-5">
                 <div className="flex flex-col md:flex-row items-center gap-4">
-                    <div className="flex-1 ml-4 md:ml-0 mr-4 md:mr-0">
+                    <div className="flex-1">
             
                         <h1 className="text-left text-[25px] md:text-4xl font-bold mb-4 md:mb-6">{data.title}</h1>
                         <p className="text-left text-lg md:text-xl text-gray-400 mb-4 md:mb-6">{data.description}</p>
@@ -27,11 +27,11 @@ function About() {
                     </div>
           
                     <div className="flex-1 relative scale-95">
-                        <div className="relative w-full aspect-square max-w-md mx-auto">
+                        <div className="relative aspect-square max-w-md mx-auto">
                             <div className="absolute inset-0 bg-gradient-to-r from-[#2a2a2a] to-[#2a2a2a] rounded-full blur-3xl"></div>
                             
 							<div className="relative z-10 w-full h-full">
-                                <img src="/storage/site/icon.png" alt="Kamish Icon" className="absolute inset-0 m-auto object-contain"/>
+                                <img src="/storage/site/icon.png" alt="Kamish Icon" className="absolute"/>
                             </div>
                         </div>
                     </div>

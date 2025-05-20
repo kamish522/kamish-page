@@ -6,9 +6,9 @@ import Invite from "./index/Kamish-invite.jsx";
 import Team from "./index/Kamish-team.jsx";
 
 const Index = () => {
-  useEffect(() => {
-    document.title = 'Главная страница | Kamish';
-  }, []);
+    useEffect(() => {
+        document.title = 'Главная страница | Kamish';
+    }, []);
 
     return (
         <>
