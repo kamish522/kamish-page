@@ -55,11 +55,9 @@ function Game() {
 						<DiscordEmbedFields slot="fields">
 							<DiscordEmbedField fieldTitle="– Technical information" inline inline-index="1">
 						        <blockquote style={{ borderLeft: '2px solid #ddd', paddingLeft: '10px' }}>
-							        Bot version: 2.2.2  Releases
+							        Bot version: 2.2.3
 							        <br />
-							        Serving servers: 2
-							        <br />
-							        Ram 2%, Ping 347 ms
+							        Serving servers: 260
 						        </blockquote>
 							</DiscordEmbedField>
 						    
@@ -68,8 +66,6 @@ function Game() {
 							        <a href='https://discord.com/oauth2/authorize?client_id=1066975258206294096' target='_blank'>Start using me</a>
 							        <br />
 							        <a href='https://discord.gg/jrTvtRXeSn' target='_blank'>My technical support</a>
-							        <br />
-							        <a href='https://kamish.pro'>My favorite site</a>
 						        </blockquote>
 						    </DiscordEmbedField>
 					    </DiscordEmbedFields>
@@ -81,7 +77,7 @@ function Game() {
     ];
 
     return (
-        <div className='px-5'>
+        <div className='px-3 md:px-5'>
             <block id='Kamish Team'>
                 <text>Возможности</text>
 
@@ -90,10 +86,10 @@ function Game() {
                     <div key={id} className="flex flex-col lg:flex-row container mx-auto pt-6 pb-4 info">
                         <div className="flex-1">
                             <h1 className="text-2xl md:text-4xl font-bold mb-4 max-w-2xl">{el.title}</h1>
-                            <p className="text-lg md:text-xl text-gray-400 mb-4 max-w-2xl">{el.description}</p>
+                            <p className="text-[17px] md:text-xl text-gray-400 mb-0 md:mb-4 max-w-2xl">{el.description}</p>
                         </div>
 
-                        <div id='Embed' className='flex-1 relative lg:block hidden' style={{ width: '1%', height: '1%' }}>
+                        <div id='Embed' className='flex-1 relative lg:block hidden' style={{ borderRadius: '15px', maxWidth: '600px', overflow: 'hidden', marginLeft: 'auto' }}>
 					     	{el.embed}
 					    </div>
                     </div>
