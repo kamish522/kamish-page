@@ -11,7 +11,7 @@ const PageNotFound = () => {
     {
       text: "Данная страница не существует!"
     },{
-      text: "Kamish сказал: 'Я люблю с вами играть'!"
+      text: "Kamish сказал: Я люблю с вами играть!"
     },{
       text: "Вау, вы нашли пасхалку!"
     },{
@@ -31,7 +31,7 @@ const PageNotFound = () => {
       <div className="container mx-auto pt-30 pb-25">
         <div className="flex-1 text-center translate-y-3">
             
-          <h1 className="text-[100px] font-bold">404</h1>
+          <h1 className="text-[150px] font-bold">404</h1>
           <p className="text-xl text-gray-400">{text}</p>
           
         </div>

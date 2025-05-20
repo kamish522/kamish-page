@@ -7,7 +7,7 @@ function Invite() {
     }
     
     return (
-        <div className='px-5'>
+        <div className='px-3 md:px-5'>
             <block id='Kamish Team'>
                 <text>Готовы пригласить меня?</text>
 

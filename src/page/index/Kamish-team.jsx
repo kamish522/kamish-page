@@ -15,16 +15,16 @@ function Info() {
     ]
 
     return (
-        <div className='px-5'>
+        <div className='px-3 md:px-5'>
             <block id='Kamish Team'>
                 <text>Мои создатели</text>
         
-                <div className="md:flex md:justify-center" id='card-div'>   
-                    <ul className="flex flex-wrap justify-center md:gap-6 gap-2">{
+                <div className="flex justify-center" id='card-div'>   
+                    <ul className="flex flex-wrap justify-center md:gap-6">{
                         data.map((person, id) => (
                             <li key={id}>
                                 <a href={person.url} target="_blank" id='block'>
-                                    <div className="flex flex-row items-center gap-3">
+                                    <div className="flex items-center gap-3">
                                         <img className="rounded-full h-20 w-20 md:h-25 md:w-25 border-3 border-[#2a2a2a]" src={person.image} alt={person.name}/>
 
                                         <div className="flex flex-col gap-1 md:gap-3 w-50 h-30">
