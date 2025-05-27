@@ -59,6 +59,22 @@ block,
     }
 }
 
+#main,
+.main {
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+    #main,
+    .main {
+        align-items: center;
+        justify-content: center;
+    }
+}
+
 text {
     font-weight: bold;
     font-size: 2.25rem;
