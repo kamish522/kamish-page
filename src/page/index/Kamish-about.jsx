@@ -12,7 +12,8 @@ function About() {
 
     return (
         <main>
-            <div className="container pt-22 pb-16 px-3 md:px-5">
+            <div className="main container pt-22 pb-16 px-3 md:px-5">
+                <div className="container"></div>
                 <div className="flex flex-col md:flex-row items-center gap-4">
                     <div className="flex-1">
             
